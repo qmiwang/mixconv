@@ -67,17 +67,13 @@ network:
     norm_type: instance # batch, instance
     num_groups: 8
 
-  block: MixResBlock #MixResBlock # ResBlock #VGGBlock # ResBlock MixResBlock
+  block: MixConvBlock #MixResBlock # ResBlock #VGGBlock # ResBlock MixResBlock
   base_filters: 32 # number of first filters
   conv_type: Conv3d #MixConvV3 #Conv3d #MixConvV2
   use_pretrained: false
   deep_supervision: True
   load_pretrained: True
   pretrained_path: /root/workspace/MixConv/ckpts/Task30_SLiver07/MixUNet3D/2021Nov11-023738
-
-  stack: true
-  drop: false
-  depth: 3
 
 
 
